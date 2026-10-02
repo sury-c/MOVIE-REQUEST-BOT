@@ -1,9 +1,9 @@
-FROM python:3.10.8-slim-buster
+FROM python:3.10.8-slim-bookworm
 
-WORKDIR /Jisshu-filter-bot
-RUN chmod 777 /Jisshu-filter-bot
+WORKDIR /jisshu-filter-bot
+RUN chmod 777 /jisshu-filter-bot
 
-RUN apt update && apt install -y --no-install-recommends git \
+RUN apt-get update && apt-get install -y --no-install-recommends git \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
