@@ -41,8 +41,8 @@ CHANNELS = [
 AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1003572448671"))
 AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", "-1003572448671"))
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1004375767453"))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
-LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1004375767453"))
+LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1004375767453"))
 
 # MongoDB
 DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://chandruparkash143_db_user:tyBps35iVEZ0iQuE@suryaofficial.k6kymfp.mongodb.net/?appName=suryaofficial")
