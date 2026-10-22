@@ -152,26 +152,30 @@ async def start(client: Client, message):
         )
     if len(message.command) != 2:
         buttons = [
-            [
-                InlineKeyboardButton(
-                    "⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋",
-                    url=f"http://telegram.dog/{temp.U_NAME}?startgroup=start",
-                )
-            ],
-            [
-                InlineKeyboardButton("• ᴅɪꜱᴀʙʟᴇ ᴀᴅꜱ •", callback_data="jisshupremium"),
-                InlineKeyboardButton("• ꜱᴘᴇᴄɪᴀʟ •", callback_data="special"),
-            ],
-            [
-                InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"),
-                InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about"),
-            ],
-            [
-                InlineKeyboardButton(
-                    "• ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ •", callback_data="earn"
-                )
-            ],
-        ]
+    [
+        InlineKeyboardButton(
+            "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            url=f"https://t.me/{temp.U_NAME}?startgroup=start"
+        )
+    ],
+    [
+        InlineKeyboardButton(
+            "⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ",
+            callback_data="help"
+        ),
+        InlineKeyboardButton(
+            "♛ ᴠɪᴘ ᴀᴄᴄᴇss",
+            callback_data="about"
+        )
+    ],
+    [
+        InlineKeyboardButton(
+            "ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ",
+            callback_data="earn"
+        )
+    ]
+]
+
         reply_markup = InlineKeyboardMarkup(buttons)
         m = await message.reply_sticker(
             "CAACAgUAAx0CZz_GMwACMBdnXZA4SejgJ6a_0TrNzOfn9ImI_QACNwsAArT4iFVaZPJf8ldVVh4E"
@@ -193,27 +197,32 @@ async def start(client: Client, message):
         "okay",
         "help",
     ]:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    "⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋",
-                    url=f"http://telegram.dog/{temp.U_NAME}?startgroup=start",
-                )
-            ],
-            [
-                InlineKeyboardButton("• ᴅɪꜱᴀʙʟᴇ ᴀᴅꜱ •", callback_data="jisshupremium"),
-                InlineKeyboardButton("• ꜱᴘᴇᴄɪᴀʟ •", callback_data="special"),
-            ],
-            [
-                InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"),
-                InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about"),
-            ],
-            [
-                InlineKeyboardButton(
-                    "• ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ •", callback_data="earn"
-                )
-            ],
-        ]
+        
+buttons = [
+    [
+        InlineKeyboardButton(
+            "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            url=f"https://t.me/{temp.U_NAME}?startgroup=start"
+        )
+    ],
+    [
+        InlineKeyboardButton(
+            "⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ",
+            callback_data="help"
+        ),
+        InlineKeyboardButton(
+            "♛ ᴠɪᴘ ᴀᴄᴄᴇss",
+            callback_data="about"
+        )
+    ],
+    [
+        InlineKeyboardButton(
+            "ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ",
+            callback_data="earn"
+        )
+    ]
+]
+
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(
             photo=START_IMG,
