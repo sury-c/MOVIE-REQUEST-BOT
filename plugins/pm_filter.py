@@ -1349,10 +1349,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [InlineKeyboardButton("⋞ ʜᴏᴍᴇ", callback_data="start")],
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
-            text=script.JISSHUPREMIUM_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
+        await query.message.edit_caption(
+        caption=script.JISSHUPREMIUM_TXT,
+        reply_markup=reply_markup,
+       parse_mode=enums.ParseMode.HTML,
         )
 
     elif query.data == "special":
