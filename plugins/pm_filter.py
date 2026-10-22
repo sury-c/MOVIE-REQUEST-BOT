@@ -1400,13 +1400,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [InlineKeyboardButton("⪻ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ", callback_data="start")],
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        await client.edit_message_media(
-            query.message.chat.id, query.message.id, InputMediaPhoto(SUBSCRIPTION)
-        )
-        await query.message.edit_text(
-            text=script.PREPLANS_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
+       await query.message.edit_media(
+    media=InputMediaPhoto(
+        SUBSCRIPTION,
+        caption=script.PREPLANS_TXT.format(query.from_user.mention),
+        parse_mode=enums.ParseMode.HTML,
+    ),
+    reply_markup=reply_markup,
         )
 
     elif query.data == "getpremium":
