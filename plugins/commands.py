@@ -191,37 +191,38 @@ async def start(client: Client, message):
             parse_mode=enums.ParseMode.HTML,
         )
         return
+    
     if len(message.command) == 2 and message.command[1] in [
         "subscribe",
         "error",
         "okay",
         "help",
     ]:
-        
-buttons = [
-    [
-        InlineKeyboardButton(
-            "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-            url=f"https://t.me/{temp.U_NAME}?startgroup=start"
-        )
-    ],
-    [
-        InlineKeyboardButton(
-            "⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ",
-            callback_data="help"
-        ),
-        InlineKeyboardButton(
-            "♛ ᴠɪᴘ ᴀᴄᴄᴇss",
-            callback_data="about"
-        )
-    ],
-    [
-        InlineKeyboardButton(
-            "ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ",
-            callback_data="earn"
-        )
-    ]
-]
+        buttons = [
+            [
+                InlineKeyboardButton(
+                    "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                    url=f"https://t.me/{temp.U_NAME}?startgroup=start"
+                )
+            ],
+            [
+                InlineKeyboardButton(
+                    "⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ",
+                    callback_data="help"
+                ),
+                InlineKeyboardButton(
+                    "♛ ᴠɪᴘ ᴀᴄᴄᴇss",
+                    callback_data="about"
+                )
+            ],
+            [
+                InlineKeyboardButton(
+                    "ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ",
+                    callback_data="earn"
+                )
+            ]
+        ]
+
 
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(
