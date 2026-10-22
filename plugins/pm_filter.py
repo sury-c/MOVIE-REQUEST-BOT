@@ -1305,21 +1305,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton(
-                    "⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋",
+                    "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
                     url=f"http://telegram.dog/{temp.U_NAME}?startgroup=start",
                 )
             ],
             [
-                InlineKeyboardButton("• ᴅɪꜱᴀʙʟᴇ ᴀᴅꜱ •", callback_data="jisshupremium"),
-                InlineKeyboardButton("• ꜱᴘᴇᴄɪᴀʟ •", callback_data="special"),
-            ],
-            [
-                InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"),
-                InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about"),
+                InlineKeyboardButton("⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ", callback_data="help"),
+                InlineKeyboardButton("♛ ᴠɪᴘ ᴀᴄᴄᴇss", callback_data="about"),
             ],
             [
                 InlineKeyboardButton(
-                    "• ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ •", callback_data="earn"
+                    "ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ",
+                    callback_data="earn",
                 )
             ],
         ]
@@ -1334,12 +1331,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ),
             reply_markup=reply_markup,
         )
-    #        await query.message.edit_text(
-    #            text=script.START_TXT.format(query.from_user.mention, get_status(), query.from_user.id),
-    #            reply_markup=reply_markup,
-    #            parse_mode=enums.ParseMode.HTML
-    #        )
-
     elif query.data == "jisshupremium":
         btn = [
             [
