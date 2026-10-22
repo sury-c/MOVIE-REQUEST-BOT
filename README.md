@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://i.ibb.co/qpxpGmC/image.jpg" alt="Jisshu-Auto-filter">
+  <img src="https://i.ibb.co/qpxpGmC/image.jpg" alt="RUDRA MOVIES Auto Filter Bot">
 </p>
 <h1 align="center">
-  <a href="https://telegram.me/JISSHU_BOTS">Jisshu Auto Filter Bot</a>
+  <a href="https://t.me/RudraMoviez">RUDRA MOVIES</a>
 </h1>
 
 ### 🤖 Bot Commands
@@ -153,13 +153,18 @@ python3 bot.py
 </p>
 </details>
  
-## **Special Thanks to**
+## **Maintained & Customized By**
+
+- **RUDRA MOVIES** — project customization and branding. [Telegram: @RudraMoviez](https://t.me/RudraMoviez)
+
+## **Original Project Credits**
 
 - thanks to [Jisshu Developer](https://t.me/JISSHU_BOTS) (myself) for modifying the repo and adding powerful new features.  
 - Thanks to [Ꭺɴᴏɴʏᴍᴏᴜꜱ](https://t.me/@BeingXAnonymous) for contributing innovative features and consistently helping improve the project.  
 - Thanks to [𝐌ʀ 𝐈ɴғɪɴɪᴛʏ](https://t.me/infinitymp07) for identifying and fixing important issues, ensuring better performance and stability.
 
 
-<h1> <img src="https://files.catbox.moe/eps9v4.jpg" width="70px" style="border-radius: 50%"> ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ </h1>
+<h1> RUDRA MOVIES — CONTACT </h1>
   
-[<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/telegram_icon.png" width="60px">](https://telegram.im/@JISSHU_BOTS) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/github_icon.png" width="60px">](https://github.com/JisshuTG) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/youtube_icon.png" width="60px">](https://www.youtube.com/@JISSHU-BOTS) [<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/insta_icon.png" width="60px">](https://www.instagram.com/jhaplustar?igsh=MW9neHowNWo1Ymt6NA==)
+[Telegram: @RudraMoviez](https://t.me/RudraMoviez)
+
