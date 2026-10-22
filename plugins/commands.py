@@ -169,10 +169,12 @@ async def start(client: Client, message):
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
-        # RUDRA MOVIES static logo PNG (like the example bot)
-        await message.reply_photo(
-            photo="plugins/Rudra_Movies_Logo.png"
+        # RUDRA MOVIES logo sticker: show briefly, then delete before the welcome message
+        m = await message.reply_sticker(
+            sticker="plugins/Rudra_Movies_Logo.webp"
         )
+        await asyncio.sleep(1)
+        await m.delete()
         await message.reply_photo(
             photo=random.choice(START_IMG),
             caption=script.START_TXT.format(
