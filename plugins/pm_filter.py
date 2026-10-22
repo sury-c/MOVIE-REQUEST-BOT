@@ -1544,6 +1544,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
+    elif query.data == "earn":
+        buttons = [
+            [InlineKeyboardButton("⋞ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ", callback_data="start")]
+        ]
+        await query.answer()
+        await query.message.edit_caption(
+            caption=(
+                "<b>💰 EARN WITH YOUR BOT</b>\\n\\n"
+                "Add your bot to your groups and use its available features.\\n"
+                "This bot does not currently have a separate earning system configured."
+            ),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=enums.ParseMode.HTML,
+        )
+
     elif query.data == "earn2":
         buttons = [
             [
