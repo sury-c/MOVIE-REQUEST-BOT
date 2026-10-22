@@ -1390,25 +1390,34 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML,
         )
 
-    elif query.data == "seeplans":
+        elif query.data == "seeplans":
         btn = [
             [
                 InlineKeyboardButton(
-                    "🍁 ᴄʜᴇᴄᴋ ᴀʟʟ ᴘʟᴀɴꜱ & ᴘʀɪᴄᴇꜱ 🍁", callback_data="free"
+                    "🔥 ᴄʜᴇᴄᴋ ᴀʟʟ ᴘʟᴀɴs & ᴘʀɪᴄᴇs 🔥",
+                    callback_data="free"
                 )
             ],
-            [InlineKeyboardButton("⪻ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ", callback_data="start")],
+            [
+                InlineKeyboardButton(
+                    "« ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ",
+                    callback_data="start"
+                )
+            ],
         ]
+
         reply_markup = InlineKeyboardMarkup(btn)
-         await query.message.edit_media(
+
+        await query.message.edit_media(
             media=InputMediaPhoto(
-                media=SUBSCRIPTION,
-                caption=script.PREPLANS_TXT.format(query.from_user.mention),
+                SUBSCRIPTION,
+                caption=script.PREPLANS_TXT.format(
+                    query.from_user.mention
+                ),
                 parse_mode=enums.ParseMode.HTML,
             ),
             reply_markup=reply_markup,
-            )
-
+        )
     elif query.data == "getpremium":
         btn = [
             [
