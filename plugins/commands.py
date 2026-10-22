@@ -169,9 +169,9 @@ async def start(client: Client, message):
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
-        # RUDRA MOVIES animated logo GIF
-        await message.reply_animation(
-            animation="plugins/Rudra_Movies_Animation_2_LightSweep.gif"
+        # RUDRA MOVIES static logo PNG (like the example bot)
+        await message.reply_photo(
+            photo="plugins/Rudra_Movies_Logo.png"
         )
         await message.reply_photo(
             photo=random.choice(START_IMG),
