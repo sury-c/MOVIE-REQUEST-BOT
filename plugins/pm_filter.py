@@ -1354,43 +1354,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup=reply_markup,
        parse_mode=enums.ParseMode.HTML,
         )
-
-    elif query.data == "special":
-        btn = [
-            [
-                InlineKeyboardButton("• ᴍᴏsᴛ sᴇᴀʀᴄʜ •", callback_data="mostsearch"),
-                InlineKeyboardButton("• ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ •", callback_data="trending"),
-            ],
-            [
-                InlineKeyboardButton("• ɪᴍᴀɢᴇ ᴛᴏ ʟɪɴᴋ •", callback_data="telegraph"),
-            ],
-            [InlineKeyboardButton("⋞ ʜᴏᴍᴇ", callback_data="start")],
-        ]
-        reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
-            text=script.SPECIAL_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
-        )
-
-    elif query.data == "earn":
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    "♻️ ᴀʟʟ ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ ᴅᴇᴛᴀɪʟꜱ ♻️", callback_data="earn2"
-                )
-            ],
-            [InlineKeyboardButton("⪻ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ", callback_data="start")],
-        ]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.EARN_TEXT.format(temp.B_LINK),
-            reply_markup=reply_markup,
-            disable_web_page_preview=True,
-            parse_mode=enums.ParseMode.HTML,
-        )
-
-        elif query.data == "seeplans":
+    
+    elif query.data == "seeplans":
         btn = [
             [
                 InlineKeyboardButton(
@@ -1418,23 +1383,35 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ),
             reply_markup=reply_markup,
         )
+
     elif query.data == "getpremium":
         btn = [
             [
                 InlineKeyboardButton(
-                    "🍁 ᴄʜᴇᴄᴋ ᴀʟʟ ᴘʟᴀɴꜱ & ᴘʀɪᴄᴇꜱ 🍁", callback_data="free"
+                    "🍁 ᴄʜᴇᴄᴋ ᴀʟʟ ᴘʟᴀɴs & ᴘʀɪᴄᴇs 🍁",
+                    callback_data="free"
                 )
             ],
-            [InlineKeyboardButton("• 𝗖𝗹𝗼𝘀𝗲 •", callback_data="close_data")],
+            [
+                InlineKeyboardButton(
+                    "• 𝗖𝗹𝗼𝘀𝗲 •",
+                    callback_data="close_data"
+                )
+            ],
         ]
+
         reply_markup = InlineKeyboardMarkup(btn)
+
         m = await query.message.reply_sticker(
             "CAACAgUAAx0CZz_GMwACMBdnXZA4SejgJ6a_0TrNzOfn9ImI_QACNwsAArT4iFVaZPJf8ldVVh4E"
         )
         await m.delete()
+
         await query.message.reply_photo(
-            photo=(SUBSCRIPTION),
-            caption=script.PREPLANS_TXT.format(query.from_user.mention),
+            photo=SUBSCRIPTION,
+            caption=script.PREPLANS_TXT.format(
+                query.from_user.mention
+            ),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
