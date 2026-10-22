@@ -169,11 +169,10 @@ async def start(client: Client, message):
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m = await message.reply_sticker(
-            "CAACAgUAAx0CZz_GMwACMBdnXZA4SejgJ6a_0TrNzOfn9ImI_QACNwsAArT4iFVaZPJf8ldVVh4E"
+        # RUDRA MOVIES animated logo GIF
+        await message.reply_animation(
+            animation="plugins/Rudra_Movies_Animation_2_LightSweep.gif"
         )
-        await asyncio.sleep(1)
-        await m.delete()
         await message.reply_photo(
             photo=random.choice(START_IMG),
             caption=script.START_TXT.format(
