@@ -154,17 +154,17 @@ async def start(client: Client, message):
         buttons = [
             [
                 InlineKeyboardButton(
-                    "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                    "➕ 👥 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚀",
                     url=f"http://telegram.dog/{temp.U_NAME}?startgroup=start",
                 )
             ],
             [
-                InlineKeyboardButton("⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ", url="https://t.me/+21bX88otSn43Mjk1"),
-                InlineKeyboardButton("♛ ᴠɪᴘ ᴀᴄᴄᴇss", url="https://t.me/+AYGNnSIln8BkYjNl"),
+                InlineKeyboardButton("🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇ 🍿", url="https://t.me/+21bX88otSn43Mjk1"),
+                InlineKeyboardButton("👑 ᴠɪᴘ ᴀᴄᴄᴇss 💎", url="https://t.me/+AYGNnSIln8BkYjNl"),
             ],
             [
                 InlineKeyboardButton(
-                    "ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ", callback_data="earn"
+                    "💰 ᴇᴀʀɴ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ 🚀", callback_data="earn"
                 )
             ],
         ]
@@ -193,17 +193,17 @@ async def start(client: Client, message):
         buttons = [
             [
                 InlineKeyboardButton(
-                    "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                    "➕ 👥 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚀",
                     url=f"http://telegram.dog/{temp.U_NAME}?startgroup=start",
                 )
             ],
             [
-                InlineKeyboardButton("⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ", url="https://t.me/+21bX88otSn43Mjk1"),
-                InlineKeyboardButton("♛ ᴠɪᴘ ᴀᴄᴄᴇss", url="https://t.me/+AYGNnSIln8BkYjNl"),
+                InlineKeyboardButton("🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇ 🍿", url="https://t.me/+21bX88otSn43Mjk1"),
+                InlineKeyboardButton("👑 ᴠɪᴘ ᴀᴄᴄᴇss 💎", url="https://t.me/+AYGNnSIln8BkYjNl"),
             ],
             [
                 InlineKeyboardButton(
-                    "ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ", callback_data="earn"
+                    "💰 ᴇᴀʀɴ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ 🚀", callback_data="earn"
                 )
             ],
         ]

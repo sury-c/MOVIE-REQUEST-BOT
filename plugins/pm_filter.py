@@ -1305,17 +1305,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton(
-                    "⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋",
+                    "➕ 👥 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🚀",
                     url=f"http://telegram.dog/{temp.U_NAME}?startgroup=start",
                 )
             ],
             [
                 InlineKeyboardButton("• ᴅɪꜱᴀʙʟᴇ ᴀᴅꜱ •", callback_data="jisshupremium"),
-                InlineKeyboardButton("• ꜱᴘᴇᴄɪᴀʟ •", callback_data="special"),
+                InlineKeyboardButton("✨ ꜱᴘᴇᴄɪᴀʟ 🌟", callback_data="special"),
             ],
             [
-                InlineKeyboardButton("⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ", url="https://t.me/+21bX88otSn43Mjk1"),
-                InlineKeyboardButton("♛ ᴠɪᴘ ᴀᴄᴄᴇss", url="https://t.me/+AYGNnSIln8BkYjNl"),
+                InlineKeyboardButton("🎬 ᴍᴏᴠɪᴇ ᴢᴏɴᴇ 🍿", url="https://t.me/+21bX88otSn43Mjk1"),
+                InlineKeyboardButton("👑 ᴠɪᴘ ᴀᴄᴄᴇss 💎", url="https://t.me/+AYGNnSIln8BkYjNl"),
             ],
             [
                 InlineKeyboardButton(
