@@ -159,8 +159,8 @@ async def start(client: Client, message):
                 )
             ],
             [
-                InlineKeyboardButton("⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ", callback_data="help"),
-                InlineKeyboardButton("♛ ᴠɪᴘ ᴀᴄᴄᴇss", callback_data="about"),
+                InlineKeyboardButton("⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ", url="https://t.me/+21bX88otSn43Mjk1"),
+                InlineKeyboardButton("♛ ᴠɪᴘ ᴀᴄᴄᴇss", url="https://t.me/+AYGNnSIln8BkYjNl"),
             ],
             [
                 InlineKeyboardButton(
@@ -198,8 +198,8 @@ async def start(client: Client, message):
                 )
             ],
             [
-                InlineKeyboardButton("⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ", callback_data="help"),
-                InlineKeyboardButton("♛ ᴠɪᴘ ᴀᴄᴄᴇss", callback_data="about"),
+                InlineKeyboardButton("⌘ ᴍᴏᴠɪᴇ ᴢᴏɴᴇ", url="https://t.me/+21bX88otSn43Mjk1"),
+                InlineKeyboardButton("♛ ᴠɪᴘ ᴀᴄᴄᴇss", url="https://t.me/+AYGNnSIln8BkYjNl"),
             ],
             [
                 InlineKeyboardButton(
