@@ -1,14 +1,14 @@
 
 
 class jisshu_template(object):
-    JISSHU_NAME = "RM developer"
+    JISSHU_NAME = "sᴜʀʏᴀ ᴏғғɪᴄɪᴀʟ"
 
     JISSHU_DISCLAIMER = (
         "This website only provides a service to help you play your video online without downloading. "
         "You can report files or videos that contain issues like copyright infringement, +18 content, violence, etc."
     )
 
-    JISSHU_REPORT_LINK = "https://t.me/RMDeveloper4"
+    JISSHU_REPORT_LINK = "https://t.me/CallAdminRMBot"
 
     JISSHU_COLOURS = {
         "header": {"background": "#48cffe", "color": "#ffffff"},
