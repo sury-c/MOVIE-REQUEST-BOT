@@ -50,7 +50,7 @@ UPDATE_CAPTION = """<b>𝖭𝖤𝖶 {} 𝖠𝖣𝖣𝖤𝖣 ✅</b>
 
 {}
 
-<blockquote>〽️ Powered by @RMDeveloper4</b></blockquote>"""
+<blockquote>〽️ Powered by @CallAdminRMBot</b></blockquote>"""
 
 QUALITY_CAPTION = """📦 {} : {}\n"""
 
