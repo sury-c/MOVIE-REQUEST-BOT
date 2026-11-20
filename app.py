@@ -5,4 +5,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "https://t.me/ABOUTOFSURYA"
+    return "https://t.me/CallAdminRMBot"
