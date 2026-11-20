@@ -1514,7 +1514,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton(
-                    "ʀᴇᴘᴏ", url="https://t.me/RMDeveloper4"
+                    "ʀᴇᴘᴏ", url="https://t.me/CallAdminRMBot"
                 )
             ],
             [
